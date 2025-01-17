@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steady Shelly • Whitepaper</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../style/font.css">
+    <link rel="stylesheet" href="../../style/animation.css">
+    <link rel="stylesheet" href="../../style/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- #region Header -->
+    <header class="top_header">
+        <div id="main_menu"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        <button class="pulse" id="connect_button">Connect Wallet</button>
+    </header>
+    <!-- #endregion Header -->
+
+    <!-- #region Nav -->
+    <div class="nav_hide" id="nav_container">
+        <nav id="nav">
+            <ul id="nav_list">
+                <a id="home_button" href="../../index.html"><i class="fa-solid fa-house"></i></a>
+                <h3>| Shelly</h3>
+                <li><a href="../shelly/core.html">Core</a></li>
+                <li><a href="../shelly/brain.html">Brain</a></li>
+                <li><a href="../shelly/database.html">Database</a></li>
+                <h3>| Workshop</h3>
+                <li><a href="../workshop/agentbuilder.html">Agent Builder</a></li>
+                <li><a href="../workshop/templatebuilder.html">Template Builder</a></li>
+                <h3>| Details</h3>
+                <li><a href="../details/roadmap.html">Roadmap</a></li>
+                <li><a href="../details/friends.html">Friends</a></li>
+                <li><a href="#main_section">Whitepaper</a></li>
+            </ul>
+        </nav>
+
+        <!-- #region Dashboard -->
+        <div class="dashboard_container">
+            <div class="dashboard_content" data-fade>
+                <div class="dashboard_body">
+                    <div class="dashboard_item">
+                        <div class="dashboard_item_body">
+                            <h3>$SLOW</h3>
+                            <p id="token_price">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="dashboard_item">
+                        <div class="dashboard_item_header">
+                            <h3>Balance</h3>
+                        </div>
+                        <div class="dashboard_item_body">
+                            <p id="wallet_balance">0.00</p>
+                            <p id="wallet_balance_usd">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion Dashboard -->
+
+        <button class="pulse" id="buy_button">Buy $SLOW</button>
+    </div>
+    <!-- #endregion Nav-->
+
+    <!-- #region Main Section -->
+    <section id="main_section overflow">
+        <div class="bg blur_max"><img src="../../assets/img/about.webp"></img></div>
+        <div class="container" id="whitepaper_container">
+            <div class="whitepaper_item" data-fade>
+                <h2>Steady Shelly: AI-Powered Trading</h2>
+                <h3>Introducing Steady Shelly, the AI trading agent that combines the wisdom of a tortoise with
+                    cutting-edge technology</h3>
+                <ul>
+                    <li>Long-term focus</li>
+                    <li>Risk management</li>
+                    <li>Adaptive trading</li>
+                    <li>Steady growth</li>
+                </ul>
+            </div>
+            <div class="whitepaper_item" data-fade>
+                <h2>The Problem</h2>
+                <h3>Traditional trading faces several challenges</h3>
+                <ul>
+                    <li>Emotional decision-making</li>
+                    <li>Limited data processing capabilities</li>
+                    <li>Inconsistent performance</li>
+                    <li>Time-consuming analysis</li>
+                </ul>
+            </div>
+            <div class="whitepaper_item" data-fade>
+                <h2>Our Solution</h2>
+                <h3>Steady Shelly addresses these challenges with</h3>
+                <ul>
+                    <li>AI-driven decision making</li>
+                    <li>Advanced data analysisg</li>
+                    <li>Consistent strategy execution</li>
+                    <li>24/7 market monitoring</li>
+                    <li>Continuous learning and adaptation</li>
+                </ul>
+            </div>
+            <div class="whitepaper_item" data-fade>
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Practical Trading Approach: Trained on current market data and basic economics texts</li>
+                    <li>Advanced Technical Analysis: Utilizes strategies such as moving averages, candlestick patterns,
+                        and RSI</li>
+                    <li>Data-Driven Decision Making: Leverages historical data and machine learning for optimal trade
+                        execution</li>
+                    <li>Risk Management: Implements safe stop losses to protect investments</li>
+                    <li>Continuous Learning: Adapts to market changes and refines strategies over time</li>
+                </ul>
+            </div>
+            <div class="whitepaper_item" data-fade>
+                <h2>Adaptive Trading</h2>
+                <h3>Shelly's adaptive trading capabilities set her apart</h3>
+                <ul>
+                    <li>Continuous learning from market trends and outcomes</li>
+                    <li>Copy trading: Adapts advantageous strategies from successful traders</li>
+                    <li>AI Networking: Makes "friends" with other AI traders to share insights</li>
+                    <li>Influence: Contributes to and shapes the AI trading community</li>
+                    <li>Dynamic strategy adjustment based on market conditions</li>
+                </ul>
+            </div>
+            <div class="whitepaper_item" data-fade>
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li>Advanced Machine Learning Algorithms</li>
+                    <li>Real-time Data Processing</li>
+                    <li>Secure Blockchain Integration</li>
+                    <li>Cloud-based Infrastructure</li>
+                    <li>AI Collaboration Networks</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion Main Section -->
+
+    <!-- #region Footer -->
+    <footer>
+    </footer>
+    <!-- #endregion Footer -->
+</body>
+<script src="../../scripts/abi.js"></script>
+<script src="../../scripts/global.js"></script>
+<script src="../../scripts/walletconnect.js"></script>
+
+</html>
+</div>

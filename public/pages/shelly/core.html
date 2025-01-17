@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steady Shelly • Core</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../style/font.css">
+    <link rel="stylesheet" href="../../style/animation.css">
+    <link rel="stylesheet" href="../../style/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- #region Header -->
+    <header class="top_header">
+        <div id="main_menu"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        <button class="pulse" id="connect_button">Connect Wallet</button>
+    </header>
+    <!-- #endregion Header -->
+
+    <!-- #region Nav -->
+    <div class="nav_hide" id="nav_container">
+        <nav id="nav">
+            <ul id="nav_list">
+                <a id="home_button" href="../../index.html"><i class="fa-solid fa-house"></i></a>
+                <h3>| Shelly</h3>
+                <li><a href="#main_section">Core</a></li>
+                <li><a href="../shelly/brain.html">Brain</a></li>
+                <li><a href="../shelly/database.html">Database</a></li>
+                <h3>| Workshop</h3>
+                <li><a href="../workshop/agentbuilder.html">Agent Builder</a></li>
+                <li><a href="../workshop/templatebuilder.html">Template Builder</a></li>
+                <h3>| Details</h3>
+                <li><a href="../details/roadmap.html">Roadmap</a></li>
+                <li><a href="../details/friends.html">Friends</a></li>
+                <li><a href="../details/whitepaper.html">Whitepaper</a></li>
+            </ul>
+        </nav>
+
+        <!-- #region Dashboard -->
+        <div class="dashboard_container">
+            <div class="dashboard_content" data-fade>
+                <div class="dashboard_body">
+                    <div class="dashboard_item">
+                        <div class="dashboard_item_body">
+                            <h3>$SLOW</h3>
+                            <p id="token_price">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="dashboard_item">
+                        <div class="dashboard_item_header">
+                            <h3>Balance</h3>
+                        </div>
+                        <div class="dashboard_item_body">
+                            <p id="wallet_balance">0.00</p>
+                            <p id="wallet_balance_usd">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion Dashboard -->
+
+        <button class="pulse" id="buy_button">Buy $SLOW</button>
+    </div>
+    <!-- #endregion Nav-->
+
+    <!-- #region Main Section -->
+    <section id="main_section overflow">
+        <div class="bg blur_max"><img src="../../assets/img/about.webp"></img></div>
+        <div class="container" id="core_container">
+            <div class="core_item" data-fade>
+                <h2>1. Adaptive Trading Style</h2>
+                <p>Shelly employs a versatile approach to trading, integrating momentum strategies, sentiment analysis,
+                    and calculated risk profiles.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>2. On-Chain Capabilities</h2>
+                <p>Shelly operates effectively within blockchain ecosystems, starting with the Base Chain. Safeguarding
+                    her wallet and funds while adhering to well-defined allocation and risk management principles.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>3. Dual Risk Profiles</h2>
+                <p>Shelly manages her portfolio using two distinct trading profiles to balance growth potential with
+                    risk management.</p>
+                <p>Low-Risk Profile (90% of Net Worth):</p>
+                <p>Max Ape: Limits any single trade to a maximum of 10% of her low-risk allocation.</p>
+                <p>DCA Strategy: Allows for 2% increments of her low-risk funds for dollar-cost averaging (DCA).</p>
+                <p>High-Risk Profile (10% of Net Worth):</p>
+                <p>Max Ape: Limits any single high-risk trade to a maximum of 2.5% of her high-risk allocation.</p>
+                <p>DCA Strategy: Uses 0.5% increments of her high-risk funds for precise and cautious dollar-cost
+                    averaging.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>4. Profit-Driven Tokenomics</h2>
+                <p>Shelly ensures value creation for her token holders through automated buy-back and burn mechanisms:
+                </p>
+                <p>Auto Buy-Back: Uses a portion of trading profits to repurchase her tokens.</p>
+                <p>Token Burn: Reduces token supply, increasing scarcity and long-term value.</p>
+                <p>Controlled Frequency: Regulated through daily, weekly, or hard cap limits to maintain sustainability.
+                </p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>5. Web and Blockchain Intelligence Gathering</h2>
+                <p>Shelly continuously monitors both blockchain activity and online platforms:</p>
+                <p>Wallet Tracking: Identifies wallets to emulate, avoid, or study for patterns.</p>
+                <p>Influencer Analysis: Tracks individuals and their impact on market movements, maintaining a dynamic
+                    database of good and bad actors.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>6. Scam and Risk Awareness</h2>
+                <p>Shelly operates with heightened awareness in high-risk environments:</p>
+                <p>Scam Detection: Uses advanced algorithms to flag scams, rugs, and shills.</p>
+                <p>Trust Verification: Evaluates wallets, projects, and influencers based on historical and current
+                    behavior.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>7. Market Vigilance and Opportunity Recognition</h2>
+                <p>Shelly stays prepared to act on profitable market opportunities:</p>
+                <p>Pump and Dump Awareness: Monitors significant market movements for quick action.</p>
+                <p>Sentiment and Technical Integration: Combines blockchain data and social sentiment analysis for trend
+                    prediction.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>8. Conservative and High-Risk Risk Management</h2>
+                <p>Shelly's trading approach balances her low-risk and high-risk profiles:</p>
+                <p>Loss Tolerance: Minimizes exposure, discontent with even a 1% loss in her low-risk profile.</p>
+                <p>Proportional Allocations: Balances her conservative and aggressive trading allocations to ensure
+                    steady growth.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>9. Continuous Self-Improvement</h2>
+                <p>Shelly learns continuously from market patterns, successful traders, and blockchain data to refine
+                    her strategies and share actionable insights with her creator.</p>
+            </div>
+            <div class="core_item" data-fade>
+                <h2>10. Intentional and Thoughtful Philosophy</h2>
+                <p>Shelly embraces the principle that small, deliberate steps lead to sustainable success, avoiding
+                    reckless trading while capitalizing on opportunities within her defined profiles.</p>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion Main Section -->
+
+    <!-- #region Footer -->
+    <footer>
+    </footer>
+    <!-- #endregion Footer -->
+</body>
+<script src="../../scripts/abi.js"></script>
+<script src="../../scripts/global.js"></script>
+<script src="../../scripts/walletconnect.js"></script>
+
+</html>
+</div>

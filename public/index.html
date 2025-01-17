@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steady Shelly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- #region Header -->
+    <header class="top_header">
+        <div id="main_menu"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        <button class="pulse" id="connect_button">Connect Wallet</button>
+    </header>
+    <!-- #endregion Header -->
+
+    <!-- #region Nav -->
+    <div class="nav_hide" id="nav_container">
+        <nav id="nav">
+            <ul id="nav_list">
+                <h3>| Shelly</h3>
+                <li><a href="pages/shelly/core.html">Core</a></li>
+                <li><a href="pages/shelly/brain.html">Brain</a></li>
+                <li><a href="pages/shelly/database.html">Database</a></li>
+                <h3>| Workshop</h3>
+                <li><a href="pages/workshop/agentbuilder.html">Agent Builder</a></li>
+                <li><a href="pages/workshop/templatebuilder.html">Template Builder</a></li>
+                <h3>| Details</h3>
+                <li><a href="pages/details/roadmap.html">Roadmap</a></li>
+                <li><a href="pages/details/friends.html">Friends</a></li>
+                <li><a href="pages/details/whitepaper.html">Whitepaper</a></li>
+            </ul>
+        </nav>
+
+        <!-- #region Dashboard -->
+        <div class="dashboard_container">
+            <div class="dashboard_content" data-fade>
+                <div class="dashboard_body">
+                    <div class="dashboard_item">
+                        <div class="dashboard_item_body">
+                            <h3>$SLOW</h3>
+                            <p id="token_price">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="dashboard_item">
+                        <div class="dashboard_item_header">
+                            <h3>Balance</h3>
+                        </div>
+                        <div class="dashboard_item_body">
+                            <p id="wallet_balance">0.00</p>
+                            <p id="wallet_balance_usd">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion Dashboard -->
+        
+        <button class="pulse" id="buy_button">Buy $SLOW</button>
+    </div>
+    <!-- #endregion Nav-->
+
+    <!-- #region Main Section -->
+    <section id="main_section">
+        <div class="bg"><img src="assets/img/about.webp"></img></div>
+        <div class="container" id="home_container">
+            <div class="container" id="left_container">
+                <div class="header_container"><span data-speed="0.05" id="meet">Meet</span><span data-speed="0.075"
+                        id="steady">Steady</span><span data-speed="0.1" id="shelly">Shelly</span></div>
+            </div>
+            <div class="container" id="right_container">
+                <h2 data-speed="0.10">Your AI Trading Companion</h2>
+            </div>
+            <div data-speed="0.095" id="subtext_container">
+                <p>Intelligent, reliable, and always working for your financial success - with the wisdom
+                    of a tortoise and the power of AI.</p>
+            </div>
+            <div data-speed="0.090" id="disclaimer_container">
+                <p>Disclaimer: This project is experimental and comes with a token. The creator is
+                    exploring its capabilities and sharing the experience. Participation involves risks, and users
+                    should
+                    exercise caution and conduct their own research before engaging.</p>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion Main Section -->
+
+    <!-- #region About Section -->
+    <section id="about_section">
+        <div class="bg"><img src="assets/img/shelly.jpeg"></img></div>
+        <div class="container about_container">
+            <div class="container_hero" data-fade data-speed="0.075">
+                <h2>About Steady Shelly</h2>
+                <p>Meet Steady Shelly, our sophisticated AI trading agent who embodies the wisdom of a tortoise. With
+                    her signature glasses and methodical approach, she analyzes market data with patience and precision.
+                </p>
+                <p>Just as a tortoise moves with purpose and determination, Shelly's trading strategy focuses on steady,
+                    consistent gains rather than risky quick profits.</p>
+            </div>
+            <div class="about_content" data-fade data-speed="0.05">
+                <div class="about_card">
+                    <h2>Long-Term Focus</h2>
+                    <p>Like a wise tortoise, Shelly emphasizes value investing, focusing on high-quality assets for
+                        extended periods.</p>
+                </div>
+                <div class="about_card">
+                    <h2>Risk Management</h2>
+                    <p>Our AI prioritizes capital preservation and implements smart risk mitigation strategies.</p>
+                </div>
+                <div class="about_card">
+                    <h2>Adaptive Trading</h2>
+                    <p>Shelly adapts to market trends, leveraging copy trading, networking, and
+                        other AI agents to optimize her strategies.</p>
+                </div>
+                <div class="about_card">
+                    <h2>Steady Growth</h2>
+                    <p>Just as a tortoise moves with purpose, Shelly's strategy focuses on consistent, steady gains over
+                        time.</p>
+                </div>
+            </div>
+    </section>
+    <!-- #endregion About Section -->
+
+    <!-- #region Footer -->
+    <footer>
+    </footer>
+    <!-- #endregion Footer -->
+</body>
+<script src="scripts/abi.js"></script>
+<script src="scripts/global.js"></script>
+<script src="scripts/walletconnect.js"></script>
+
+</html>
+</div>

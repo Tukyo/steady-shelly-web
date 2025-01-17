@@ -1,0 +1,132 @@
+/* >---FADE---< */
+.fade {
+    animation: fade .5s ease-in-out forwards;
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadedown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* >---FADE---< */
+
+/* >---SHOW---< */
+.show {
+    animation: show 0.5s ease-in-out forwards;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* >---SHOW---< */
+
+/* >---HIDE---< */
+.hide {
+    animation: hide 0.5s ease-in-out forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+/* >---HIDE---< */
+
+/* >---LOADER---< */
+.loader {
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: auto;
+    background:
+        radial-gradient(farthest-side, var(--main) 94%, #0000) top/6px 6px no-repeat,
+        conic-gradient(#0000 30%, var(--main));
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 6px), #000 0);
+    mask: radial-gradient(farthest-side, #0000 calc(100% - 6px), #000 0);
+    animation: loader 1s infinite linear;
+}
+@keyframes loader {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+/* >---LOADER---< */
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes rainbowCycle {
+    0% {
+        color: var(--rainbow_1);
+    }
+
+    20% {
+        color: var(--rainbow_2);
+    }
+
+    40% {
+        color: var(--rainbow_3);
+    }
+
+    60% {
+        color: var(--rainbow_4);
+    }
+
+    80% {
+        color: var(--rainbow_5);
+    }
+
+    90% {
+        color: var(--rainbow_6);
+    }
+
+    100% {
+        color: var(--rainbow_1);
+    }
+}

@@ -1,0 +1,21 @@
+.mulish {
+    font-family: "Mulish", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.mulish_bold {
+    font-family: "Mulish", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* Black 900 */
+.mulish_black {
+    font-family: "Mulish", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.mulish_extralight {
+    font-family: "Mulish", serif;
+    font-weight: 200;
+    font-style: normal;
+}
