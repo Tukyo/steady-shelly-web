@@ -1,2 +1,2 @@
 # Steady Shelly Website Repository
-Steady Shelly Website • $SLOW
+Steady Shelly • $SLOW
